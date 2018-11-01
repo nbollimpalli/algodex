@@ -12,7 +12,7 @@ This library helps in supporting algovent app framework integration procedures s
 7) file storage utils
 8) test and staging environment settings
 
-# AlgodexApp
+# Contribution to Algodex
 ##for algodex library development and testing
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.2.
 

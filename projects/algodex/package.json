@@ -1,14 +1,14 @@
 {
   "name": "algodex",
   "version": "0.0.1",
-  "description": "This is a simple example Angular Library published to npm.",
+  "description": "This library helps in supporting algovent app framework integration procedures.",
   "keywords" :["Angular","Library"],
   "license" : "SEE LICENSE IN LICENSE",
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/t-palmer/ng-example-library"
+    "url" : "https://github.com/algovent/algodex"
   },
-  "homepage" :"https://medium.com/@palmer_todd/the-angular-library-series-publishing-ce24bb673275",
+  "homepage" :"https://algovent.github.io/algodex/",
   "peerDependencies": {
     "@angular/common": "^7.0.0",
     "@angular/core": "^7.0.0"
