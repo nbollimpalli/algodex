@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "algodex": [
+        "dist/algodex"
+      ],
+      "algodex/*": [
+        "dist/algodex/*"
+      ]
+    }
   }
 }

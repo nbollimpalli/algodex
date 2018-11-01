@@ -129,6 +129,41 @@
           }
         }
       }
+    },
+    "algodex": {
+      "root": "projects/algodex",
+      "sourceRoot": "projects/algodex/src",
+      "projectType": "library",
+      "prefix": "enl",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/algodex/tsconfig.lib.json",
+            "project": "projects/algodex/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/algodex/src/test.ts",
+            "tsConfig": "projects/algodex/tsconfig.spec.json",
+            "karmaConfig": "projects/algodex/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/algodex/tsconfig.lib.json",
+              "projects/algodex/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "algodex-app"
