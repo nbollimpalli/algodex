@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "copy-license": "copy .\\LICENSE .\\dist\\algodex",
-    "copy-readme": "copy .\\README.md .\\dist\\algodex",
+    "copy-license": "cp LICENSE ./dist/algodex",
+    "copy-readme": "cp README.md ./dist/algodex",
     "copy-files": "npm run copy-license && npm run copy-readme",
     "build_lib": "ng build algodex",
     "npm_pack": "cd dist/algodex && npm pack",
@@ -26,6 +26,7 @@
     "@angular/platform-browser": "~7.0.0",
     "@angular/platform-browser-dynamic": "~7.0.0",
     "@angular/router": "~7.0.0",
+    "copy": "^0.3.2",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.26"

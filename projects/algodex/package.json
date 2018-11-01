@@ -1,9 +1,9 @@
 {
-  "name": "algodex",
-  "version": "0.0.1",
+  "name": "@algovent/algodex",
+  "version": "0.0.3",
   "description": "This library helps in supporting algovent app framework integration procedures.",
-  "keywords" :["Angular","Library"],
-  "license" : "SEE LICENSE IN LICENSE",
+  "keywords" :["Angular","Angular 6", "Algovent", "Algodex", "Utils", "Framework"],
+  "license" : "GNU General Public License v3.0",
   "repository": {
     "type" : "git",
     "url" : "https://github.com/algovent/algodex"
