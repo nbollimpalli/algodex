@@ -7,4 +7,4 @@ import { from } from 'rxjs';
 export * from './lib/algodex.service';
 export * from './lib/algodex.component';
 export * from './lib/algodex.module';
-export * from './lib/foo/foo.component';
+export * from './lib/social-login/auth.service';

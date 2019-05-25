@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AlgodexModule } from 'algodex';
-
+import { AuthService } from 'algodex';
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +14,7 @@ import { AlgodexModule } from 'algodex';
     AppRoutingModule,
     AlgodexModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

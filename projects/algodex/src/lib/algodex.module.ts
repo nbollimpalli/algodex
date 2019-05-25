@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { AlgodexComponent } from './algodex.component';
-import { FooComponent } from './foo/foo.component';
+export { AuthService } from "./social-login/auth.service";
 
 @NgModule({
   imports: [
   ],
-  declarations: [AlgodexComponent, FooComponent],
-  exports: [AlgodexComponent, FooComponent]
+  declarations: [AlgodexComponent],
+  exports: [AlgodexComponent]
 })
 export class AlgodexModule { }
