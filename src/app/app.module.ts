@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AlgodexModule } from 'algodex';
 import { AlgoAuthService } from 'algodex';
-import { SocialLoginNotifierDirective } from 'projects/algodex/src/public_api';
+import { SocialLoginNotifierDirective } from 'algodex';
+import { TestService } from './test.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,10 +13,9 @@ import { SocialLoginNotifierDirective } from 'projects/algodex/src/public_api';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AlgodexModule
+    AppRoutingModule
   ],
-  providers: [AlgoAuthService],
+  providers: [AlgoAuthService, TestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Renderer2, HostListener, Input } from "@angular/core";
+import { Directive, HostListener, Input } from "@angular/core";
 import { AlgoAuthService } from "../social-login/algo-auth.service";
 
 @Directive({
@@ -7,9 +7,9 @@ import { AlgoAuthService } from "../social-login/algo-auth.service";
 export class SocialLoginNotifierDirective
 {
     @Input('socialLoginButton') providerType : String;
-    @Input('algoAuthService') algoAuthService : AlgoAuthService;
+    // @Input('algoAuthService') algoAuthService : AlgoAuthService;
 
-    constructor(){}
+    constructor(private algoAuthService : AlgoAuthService){}
 
     @HostListener('click', ['$event.target']) onclick(button)
     {

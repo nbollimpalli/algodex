@@ -1,10 +1,11 @@
 import { ProviderInterface } from './provider-interface';
+import { AlgoAuthService } from '../social-login/algo-auth.service';
 
 export class AlgoventAuthProvider implements ProviderInterface
 {
     client_id : string;
 
-    constructor(config)
+    constructor(config, private algoAuthService : AlgoAuthService)
     {
         this.client_id = config.client_id;
     }
@@ -15,11 +16,9 @@ export class AlgoventAuthProvider implements ProviderInterface
     
     login()
     {
-        return null;
     }
 
     logout()
     {
-        return null;
     }
 }

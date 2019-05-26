@@ -1,11 +1,12 @@
 import { ProviderInterface } from './provider-interface';
+import { AlgoAuthService } from '../social-login/algo-auth.service';
 declare let FB: any;
-
+const FACEBOOK: string = 'Facebook';
 export class FacebookAuthProvider implements ProviderInterface
 {
     app_id : string;
 
-    constructor(config)
+    constructor(config, private algoAuthService: AlgoAuthService)
     {
         this.app_id = config.app_id;
         this.initialize();
@@ -38,23 +39,20 @@ export class FacebookAuthProvider implements ProviderInterface
     {
         FB.login((response)=>
         {
-            console.log('submitLogin',response);
             if (response.authResponse)
             {
-            //login success
-            //login success code here
-            //redirect to home page
+                var finalresponse = {
+                    token : response.authResponse['accessToken']
+                }
+                this.algoAuthService.loginCallBack(finalresponse, false, FACEBOOK);
             }
             else
             {
-            console.log('User login failed');
+                this.algoAuthService.loginCallBack('User login failed', true, FACEBOOK);
             }
         });
-        return null;
     }
 
     logout()
-    {
-        return null;
-    }
+    {}
 }

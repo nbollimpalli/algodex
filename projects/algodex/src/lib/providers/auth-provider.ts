@@ -15,7 +15,7 @@ const providers = {
 };
 
 export class AuthProvider {
-    constructor (className, opts) {
-        return new providers[className](opts);
+    constructor (className, authConfig, algoAuthService) {
+        return new providers[className](authConfig, algoAuthService);
     }
 }

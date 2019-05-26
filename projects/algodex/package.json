@@ -1,6 +1,6 @@
 {
   "name": "@algovent/algodex",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "This library helps in supporting algovent app framework integration procedures.",
   "keywords" :["Angular","Angular 6", "Algovent", "Algodex", "Utils", "Framework"],
   "license" : "GNU General Public License v3.0",
@@ -11,6 +11,7 @@
   "homepage" :"https://algovent.github.io/algodex/",
   "peerDependencies": {
     "@angular/common": "^7.0.0",
-    "@angular/core": "^7.0.0"
+    "@angular/core": "^7.0.0",
+    "rxjs": "~6.3.3"
   }
 }
