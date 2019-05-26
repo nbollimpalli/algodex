@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { AuthService } from 'algodex';
+import { AlgoAuthService } from 'algodex';
+import { environment } from '../environments/environment';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,11 +8,8 @@ import { AuthService } from 'algodex';
 })
 export class AppComponent {
   title = 'algodex-app';
-  constructor(private authService : AuthService)
+  constructor(private algoAuthService : AlgoAuthService)
   {
-    var configs = {
-      "facebook_app_id":"2324515721200431"
-    }
-    authService.loadConfigurations(configs);
+    this.algoAuthService.loadConfigurations(environment.algodex_oauth_config);
   }
 }
