@@ -2,15 +2,16 @@
 # Algodex
 
 This library helps in supporting algovent app framework integration procedures such as
-1) authentication procedures
-2) authorization procedures
-2) rest utils
-3) constants
-4) security settings
-5) datetime utils
-6) location utils
-7) file storage utils
-8) test and staging environment settings
+1) social login for facebook
+2) authentication procedures
+3) authorization procedures
+4) rest utils
+5) constants
+6) security settings
+7) datetime utils
+8) location utils
+9) file storage utils
+10) test and staging environment settings
 
 # Contribution to Algodex
 ##for algodex library development and testing
